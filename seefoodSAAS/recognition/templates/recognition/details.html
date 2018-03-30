@@ -1,0 +1,34 @@
+<head>
+    <title>Upload | SeeFood</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        html {
+            display: table;
+            margin: auto;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+
+{% if container_id %}
+    <p><strong>Served by container ID {{ container_id }}</strong></p>
+{% endif %}
+
+{% if error_message %}
+    <p><strong>{{ error_message }}</strong></p>
+{% endif %}
+
+<form enctype="multipart/form-data" action="{% url 'recognition:process' %}" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <br><br>
+    <input type="submit" value="Submit" />
+</form>

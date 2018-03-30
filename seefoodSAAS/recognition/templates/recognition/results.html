@@ -1,0 +1,30 @@
+<head>
+    <title>Results | SeeFood</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        html {
+            display: table;
+            margin: auto;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<h3>Detected objecs in {{ filename }}</h3>
+
+<p><strong>Served by Container ID {{ hostname }}</strong></p>
+
+<ol>
+    {% for arr in json_arr %}
+        <li>{{ arr }}</li>
+    {% endfor %}
+</ol>
+
+<a href="{% url 'recognition:upload' %}">Try another image?</a>

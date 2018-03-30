@@ -1,0 +1,5 @@
+tensorflow
+opencv-contrib-python
+Cython
+numpy
+Django
