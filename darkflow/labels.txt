@@ -1,0 +1,13 @@
+apple
+banana
+broccoli
+cabbage
+capsicum
+cauliflower
+corn
+cucumber
+jackfruit
+pineapple
+pomogranate
+spinach
+strawberry
