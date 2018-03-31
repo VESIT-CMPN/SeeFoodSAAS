@@ -2,7 +2,7 @@ version: "3"
 services:
   web:
     # replace username/repo:tag with your name and image details
-    image: himanshurawlani/objectrecognition
+    image: himanshurawlani/objectrecognition:winsupp
     deploy:
       replicas: 3
     ports:
